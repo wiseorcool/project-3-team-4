@@ -5,3 +5,7 @@ We are Team of 4 members, and below is the name of the Team Members
 2) HoHsin Chang
 3) Vaibhav Singh
 4) Michael Elkabas
+
+
+The file exceeds the limit which can be uploaded to github, the files can be downloaded from the below link on kaggle
+https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset#:~:text=file_download-,Download,-(239%20MB
