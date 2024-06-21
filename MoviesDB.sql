@@ -21,18 +21,12 @@ CREATE TABLE Movies (
     vote_count FLOAT
 );
 
--- Table for genres
-CREATE TABLE genres (
+-- Table for Genres
+CREATE TABLE Genres (
     movie_id INT,
     id INT,
     name VARCHAR(255),
-    FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
-);
-
--- Table for keywords
-CREATE TABLE Keywords (
-    movie_id INT,
-    keywords TEXT,
+    PRIMARY KEY (movie_id, id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
@@ -47,10 +41,10 @@ CREATE TABLE "Cast" (
     name VARCHAR(255),
     "order" INT,
     profile_path VARCHAR(255),
+    PRIMARY KEY (movie_id, cast_id, id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
--- Table for Crew
 CREATE TABLE Crew (
     movie_id INT,
     credit_id VARCHAR(255),
@@ -60,6 +54,7 @@ CREATE TABLE Crew (
     job VARCHAR(255),
     name VARCHAR(255),
     profile_path VARCHAR(255),
+    PRIMARY KEY (movie_id, department, job, id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
@@ -68,14 +63,16 @@ CREATE TABLE Production_Companies (
     movie_id INT,
     id INT,
     name VARCHAR(255),
+    PRIMARY KEY (movie_id, id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
 -- Table for Production_Countries
 CREATE TABLE Production_Countries (
-    movie_id INT,
     iso_3166_1 VARCHAR(10),
     name VARCHAR(255),
+	movie_id INT,
+	PRIMARY KEY (iso_3166_1, name, movie_id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
@@ -132,9 +129,3 @@ FROM Movies m
 JOIN Production_Countries pc ON m.movie_id = pc.movie_id
 WHERE m.title = 'Toy Story';
 
--- Query to Get All Movies with Their Associated Keywords
-
-SELECT m.movie_id, m.title, k.keywords
-FROM Movies m
-JOIN Keywords k ON m.movie_id = k.movie_id
-LIMIT 10;
