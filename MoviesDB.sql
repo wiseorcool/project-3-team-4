@@ -72,7 +72,7 @@ CREATE TABLE Production_Countries (
     iso_3166_1 VARCHAR(10),
     name VARCHAR(255),
 	movie_id INT,
-	PRIMARY KEY (iso_3166_1, name, movie_id),
+    PRIMARY KEY (iso_3166_1, name, movie_id),
     FOREIGN KEY (movie_id) REFERENCES Movies(movie_id)
 );
 
@@ -98,14 +98,6 @@ JOIN genres g ON m.movie_id = g.movie_id
 WHERE g.name = 'Comedy'
 LIMIT 10;
 
-
--- Query to List All Cast Members for a Specific Movie
-
-SELECT m.movie_id, m.title, c.name AS cast_member, c.character
-FROM Movies m
-JOIN "Cast" c ON m.movie_id = c.movie_id
-WHERE m.title = 'Toy Story'
-ORDER BY c.cast_id;
 
 -- Query to Find All Movies by a Specific Director
 
