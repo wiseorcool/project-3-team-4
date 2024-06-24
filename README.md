@@ -102,3 +102,5 @@ Why it was chosen: The re library is crucial for complex string manipulation tas
 Summary
 The combination of these tools and libraries provided a robust framework for handling the entire ETL process, from data extraction and cleaning to transformation, validation, and storage, culminating in data visualization. The addition of libraries like great_expectations and re significantly enhanced the data validation and cleaning processes, ensuring high data quality and integrity. These tools were chosen for their specific capabilities that addressed the unique challenges encountered during the project.
 
+Ethical Consideration
+We reviewed Kaggle's term of service and the data can only be used for internal and personal use. 
