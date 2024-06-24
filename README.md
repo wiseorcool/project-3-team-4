@@ -10,6 +10,9 @@ Michael Elkabas
 The file exceeds the limit which can be uploaded to github, the files can be downloaded from the below link on kaggle https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset#:~:text=file_download-,Download,-(239%20MB)
 In particular, credits.csv is required to run the DTScript.ipynb and must be downloaded per the above link as it is too large to include in GitHub. 
 
+You may locate the full ERD QuickDB: https://app.quickdatabasediagrams.com/#/d/IN5CRU (PNG is located in the GitHub repo)
+
+
 Data Engineering attributes consists of:
 
 Data Quality and Consistency:
