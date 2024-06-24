@@ -1,11 +1,14 @@
 project-3-team-4
+
 This is a group assignment for Project 3 and Team 4 We are Team of 4 members, and below is the name of the Team Members
 
 Ola Usman
 HoHsin Chang
 Vaibhav Singh
 Michael Elkabas
-The file exceeds the limit which can be uploaded to github, the files can be downloaded from the below link on kaggle https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset#:~:text=file_download-,Download,-(239%20MB
+
+The file exceeds the limit which can be uploaded to github, the files can be downloaded from the below link on kaggle https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset#:~:text=file_download-,Download,-(239%20MB)
+In particular, credits.csv is required to run the DTScript.ipynb and must be downloaded per the above link as it is too large to include in GitHub. 
 
 Data Engineering attributes consists of:
 
