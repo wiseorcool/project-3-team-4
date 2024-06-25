@@ -104,3 +104,19 @@ The combination of these tools and libraries provided a robust framework for han
 
 Ethical Consideration
 We reviewed Kaggle's term of service and the data can only be used for internal and personal use. 
+
+
+Visualization
+We utilized SQLAlchemy for database interactions, Flask for creating the API endpoints, and Plotly for data aggregation and visualization through the API
+See below graphs used in our presentations
+![1](https://github.com/wiseorcool/project-3-team-4/assets/52576262/fc5b7aad-6a5b-4da2-91e9-7004118608d9)
+![2](https://github.com/wiseorcool/project-3-team-4/assets/52576262/10b867d4-51d9-43db-a1a4-11a10216da57)
+![3](https://github.com/wiseorcool/project-3-team-4/assets/52576262/1504b206-9ccf-44c0-a5b5-1cddd4a9950e)
+![4](https://github.com/wiseorcool/project-3-team-4/assets/52576262/42420d27-11a6-4635-94c6-33936327d848)
+![5](https://github.com/wiseorcool/project-3-team-4/assets/52576262/6133a962-e250-4d3c-93a6-b6b4bc9c30f8)
+
+Link of our presentation
+https://docs.google.com/presentation/d/1RBLCM0QL6UCeWweEyuXaddyZ3FJPWmLdnxY1oh11dVw/edit?usp=sharing
+
+
+
